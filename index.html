@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Raízes da Amazônia</title>
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+
+    <main class="main-content">
+      <section id="home" class="home">
+        <div class="title-container">
+          <h3 class="subtitle">Notícias do Norte</h3>
+          <h1 class="title">Raízes da <br />Amazônia</h1>
+          <p class="description">
+            No Norte do Brasil, cada rio conta uma história, cada canto de mata
+            guarda um segredo, e cada povo carrega a força de gerações
+            ancestrais.
+          </p>
+          <a href="#recent-news"
+            ><button class="home-btn btn-primary">Leia Mais</button></a
+          >
+        </div>
+        <div class="image-container">
+          <img src="./assets/Home-Image.png" alt="Home image" />
+        </div>
+      </section>
+
+      <section id="main-news" class="main-news">
+        <div class="title-container">
+          <h1 class="section-title">Destaque</h1>
+        </div>
+
+        <div class="content">
+          <div class="image-container-main">
+            <img src="./assets/Destaque.png" alt="Home image" />
+            <div class="card-container">
+              <div class="badge-recent">
+                <h5 class="type-recent">Esportes</h5>
+                <p class="-recent">11 de Maio de 2025</p>
+              </div>
+
+              <div class="card-title-container">
+                <h2 class="card-title">
+                  Remo supera Paysandu nos pênatis e fica com o título de
+                  campeão paraense de 2025
+                </h2>
+              </div>
+
+              <div class="description-container">
+                <p class="main-description">
+                  Mesmo derrotado por 1 a 0 no tempo normal, o Leão superou o
+                  Paysandu nos pênaltis por 6 a 5, após empate em 3 a 3 no
+                  placar agregado, e ergueu a taça diante de mais de 40 mil
+                  torcedores no Mangueirão. A estrela de Marcelo Rangel brilhou
+                  na hora decisiva, e Reynaldo, com frieza, converteu a última
+                  cobrança para selar o título azulino em uma final marcada por
+                  tensão até o último chute.
+                </p>
+              </div>
+
+              <div class="button-container">
+                <button
+                  class="new-button"
+                  id="new-button"
+                  onclick="abrirDetalhes()"
+                >
+                  Leia Mais
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="recent-news" class="recent-news">
+        <div class="recent-news-title">
+          <h1 class="recent-title">Notícias Recentes</h1>
+          <button id="recent-new-button">
+            <a href="./pages/News/index.html">Ver Tudo</a>
+          </button>
+        </div>
+
+        <div class="horizontal-new">
+          <div class="horizontal-image">
+            <img src="./assets/horizontal.png" alt="Image" />
+          </div>
+
+          <div class="new-text">
+            <div class="badge">
+              <h5 class="type">Política</h5>
+              <p class="date">29 de Maio de 2025</p>
+            </div>
+
+            <div class="card-text">
+              <div class="card-title-container">
+                <h2 class="card-title">
+                  CÂMARA MUNICIPAL DE MANAUS APROVA PL DE COTAS EM CONCURSOS
+                  PÚBLICOS
+                </h2>
+              </div>
+
+              <div class="description-container">
+                <p class="main-description">
+                  Nesta quarta-feira (28), o Projeto lei que visa a criação de
+                  cotas raciais para pretos, pardos, indígenas e quilombolas nos
+                  concursos públicos. O projeto lei propões que 30% das vagas
+                  sejam reservadas para cotas.
+                </p>
+              </div>
+            </div>
+
+            <div class="button-container">
+              <button id="new-button">Leia Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-row" id="destaque-container"></div>
+      </section>
+
+      <section id="more-view" class="more-view">
+        <div class="recent-news-title">
+          <h1 class="recent-title">Mais Vistos</h1>
+          <button id="recent-new-button">Ver Tudo</button>
+        </div>
+
+        <div class="cards-row" id="mais-vistos-container"></div>
+      </section>
+    </main>
+
+    <section class="footer-container">
+      <footer id="footer" class="footer">
+        <div class="footer-logo">
+          <img src="./assets/logo.png" alt="Logo" />
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-link">Home</div>
+          <div class="footer-link">Notícias</div>
+          <div class="footer-link">Sobre o Norte</div>
+          <div class="footer-link">Sobre Nós</div>
+        </div>
+
+        <div class="footer-buttons">
+          <div class="footer-button">
+            <img src="./assets/facebook.png" alt="facebook" />
+          </div>
+          <div class="footer-button">
+            <img src="./assets/instagram.png" alt="instagram" />
+          </div>
+          <div class="footer-button">
+            <img src="./assets/youtube.png" alt="youtube" />
+          </div>
+          <div class="footer-button">
+            <img src="./assets/phone.png" alt="phone" />
+          </div>
+        </div>
+
+        <div class="footer-line-container">
+          <div class="footer-line"></div>
+        </div>
+
+        <div class="footer-copyright">
+          <p class="copyright">
+            Copyright © 2025. Todos os direitos reservados
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script defer src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./components/Navbar/script.js" type="module"></script>
+  </body>
+</html>

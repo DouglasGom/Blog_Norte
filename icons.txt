@@ -1,0 +1,12 @@
+PIN DE LOCALIDADE
+<i class="ph ph-map-pin"></i>
+
+LUPA
+<i class="ph ph-magnifying-glass"></i>
+
+GOTA
+<i class="ph ph-drop-half-bottom"></i>
+
+VENTO
+<i class="ph ph-wind"></i>
+
