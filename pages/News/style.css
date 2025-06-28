@@ -336,21 +336,25 @@ button {
 }
 
 .small-card {
-  gap: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 550px; /* defina o valor que desejar */
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-.small-card img {
+
+.small-card img{
   height: 250px;
   width: 100%;
-  object-fit: cover;
+  object-fit:cover;
   margin-bottom: -2rem;
   border-radius: 8px;
 }
 
-.new-text {
+.new-text{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -369,12 +373,11 @@ button {
 
 .card-title-container-recent {
   padding-top: 0.5rem;
-  text-align: left;
 }
 
 .card-title-recent {
   font-size: 16px;
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
   text-transform: uppercase;
 }
 
@@ -384,18 +387,22 @@ button {
 
 .description-container-recent {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .main-description-recent {
-  text-align: justify;
   font-size: 12px;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
+
 
 .button-container {
   padding-top: 1rem;
-  padding-bottom: 2rem;
-  display: flex;
-  align-items: left;
 }
 
 /* RODAPÉ */

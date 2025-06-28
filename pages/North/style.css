@@ -563,6 +563,24 @@ form button:hover{
   font-size: .9rem;
 }
 
+.card-overlay:hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: .9rem;
+}
+
 .animal-cards:hover, .animal-cards-small:hover .card-overlay {
   opacity: 1;
 }
@@ -575,13 +593,13 @@ form button:hover{
   background-image: url('https://www.floresefolhagens.com.br/wp-content/uploads/2016/01/vitoria-regia-victoria-amazonica-1-2-e1561605514710.jpg');
 }
 .animal-cards-small:nth-child(1) {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Viktorie_kr%C3%A1lovsk%C3%A1_-_kv%C4%9Bt.JPG/500px-Viktorie_kr%C3%A1lovsk%C3%A1_-_kv%C4%9Bt.JPG');
+  background-image: url('https://tse4.mm.bing.net/th/id/OIP.ywOXVCN3OEi2-OCAjTCSZQHaFC?r=0&rs=1&pid=ImgDetMain&o=7&rm=3');
 }
 .animal-cards-small:nth-child(2) {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Viktorie_kr%C3%A1lovsk%C3%A1_-_kv%C4%9Bt.JPG/500px-Viktorie_kr%C3%A1lovsk%C3%A1_-_kv%C4%9Bt.JPG');
+  background-image: url('https://folhago.com.br/wp-content/uploads/2020/12/foto-do-post-108.png');
 }
 .animal-cards-small:nth-child(3) {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Viktorie_kr%C3%A1lovsk%C3%A1_-_kv%C4%9Bt.JPG/500px-Viktorie_kr%C3%A1lovsk%C3%A1_-_kv%C4%9Bt.JPG');
+  background-image: url('https://noamazonaseassim.com/wp-content/uploads/2020/01/poraque-amazonico.jpg');
 }
 
 

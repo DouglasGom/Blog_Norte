@@ -307,7 +307,7 @@ button {
   margin-top: 2rem;
 }
 .image-container-main img {
-  height: 550px;
+  height: 650px;
   display: block;
   border-radius: 16px;
 }
@@ -433,12 +433,16 @@ button {
   gap: 40px;
 }
 
-.small-card{
-  gap: 30px;
+.small-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 550px; /* defina o valor que desejar */
+  overflow: hidden;
+  padding: 1rem;
+  border-radius: 8px;
 }
+
 
 .small-card img{
   height: 250px;
@@ -481,15 +485,22 @@ button {
 
 .description-container-recent {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .main-description-recent {
-  text-align: justify;
   font-size: 12px;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
+
 .button-container {
-  padding-top: 1rem;
+  padding-top: auto;
 }
 
 

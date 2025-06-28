@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const categoriaSelecionada = params.get("categoria");
+  const termoBusca = params.get("busca");
 
   fetch("../../data/noticias.json")
     .then((response) => response.json())
@@ -9,14 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const container = document.getElementById("news-container");
       if (!container) return;
 
-      const params = new URLSearchParams(window.location.search);
-      const categoriaSelecionada = params.get("categoria");
-      const termoBusca = params.get("busca");
       let noticiasFiltradas = noticias;
 
       if (categoriaSelecionada) {
-        noticiasFiltradas = noticias.filter(
+        noticiasFiltradas = noticiasFiltradas.filter(
           (n) =>
+            n.categoria &&
             n.categoria.toLowerCase() === categoriaSelecionada.toLowerCase()
         );
       }
@@ -24,18 +23,20 @@ document.addEventListener("DOMContentLoaded", () => {
       if (termoBusca) {
         const termos = termoBusca.toLowerCase().split(" ");
         noticiasFiltradas = noticiasFiltradas.filter((n) =>
-          termos.some((termo) => n.titulo.toLowerCase().includes(termo))
+          termos.some((termo) =>
+            n.titulo?.toLowerCase().includes(termo)
+          )
         );
       }
 
       if (noticiasFiltradas.length === 0) {
         container.innerHTML = `
-      <div class="sem-noticia">
-        <p style="padding-left: 5rem; padding-bottom: 7rem;">Nenhum resultado encontrado</p>
-        <h3 style="margin-top: 2rem;padding-left: 5rem;">Veja também</h3>
-        <div id="veja-tambem" class="cards-row"></div>
-      </div>
-    `;
+          <div class="sem-noticia">
+            <p style="padding-left: 5rem; padding-bottom: 7rem;">Nenhum resultado encontrado</p>
+            <h3 style="margin-top: 2rem; padding-left: 5rem;">Veja também</h3>
+            <div id="veja-tambem" class="cards-row"></div>
+          </div>
+        `;
 
         const embaralhadas = noticias
           .sort(() => 0.5 - Math.random())
@@ -43,32 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const vejaTambemContainer = document.getElementById("veja-tambem");
 
         embaralhadas.forEach((noticia) => {
-          const card = document.createElement("div");
-          card.className = "small-card";
-          card.innerHTML = `
-        <img src="${noticia.foto}" alt="Imagem da notícia" />
-        <div class="small-card-description">
-          <div class="new-text">
-            <div class="badge-recent">
-              <h5 class="type-recent">${noticia.categoria}</h5>
-              <p class="-recent">${noticia.data}</p>
-            </div>
-            <div class="card-text-recent">
-              <div class="card-title-container-recent">
-                <h2 class="card-title-recent">${noticia.titulo}</h2>
-              </div>
-              <div class="description-container-recent">
-                <p class="main-description-recent">${noticia.resumo}</p>
-              </div>
-            </div>
-            <div class="button-container">
-              <button class="new-button" onclick='abrirDetalhes(${JSON.stringify(
-                noticia
-              )})'>Leia Mais</button>
-            </div>
-          </div>
-        </div>
-      `;
+          const card = criarCardNoticia(noticia);
           vejaTambemContainer.appendChild(card);
         });
 
@@ -76,36 +52,46 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       noticiasFiltradas.forEach((noticia) => {
-        const card = document.createElement("div");
-        card.className = "small-card";
-
-        card.innerHTML = `
-      <img src="${noticia.foto}" alt="Imagem da notícia" />
-      <div class="small-card-description">
-        <div class="new-text">
-          <div class="badge-recent">
-            <h5 class="type-recent">${noticia.categoria}</h5>
-            <p class="-recent">${noticia.data}</p>
-          </div>
-          <div class="card-text-recent">
-            <div class="card-title-container-recent">
-              <h2 class="card-title-recent">${noticia.titulo}</h2>
-            </div>
-            <div class="description-container-recent">
-              <p class="main-description-recent">${noticia.resumo}</p>
-            </div>
-          </div>
-          <div class="button-container">
-            <button class="new-button" onclick='abrirDetalhes(${JSON.stringify(
-              noticia
-            )})'>Leia Mais</button>
-          </div>
-        </div>
-      </div>
-    `;
+        const card = criarCardNoticia(noticia);
         container.appendChild(card);
       });
     })
-
     .catch((error) => console.error("Erro ao buscar notícias", error));
 });
+
+function criarCardNoticia(noticia) {
+  const card = document.createElement("div");
+  card.className = "small-card";
+
+  card.innerHTML = `
+    <img src="${noticia.foto}" alt="Imagem da notícia" />
+    <div class="small-card-description">
+      <div class="new-text">
+        <div class="badge-recent">
+          <h5 class="type-recent">${noticia.categoria}</h5>
+          <p class="-recent">${noticia.data}</p>
+        </div>
+        <div class="card-text-recent">
+          <div class="card-title-container-recent">
+            <h2 class="card-title-recent">${noticia.titulo}</h2>
+          </div>
+          <div class="description-container-recent">
+            <p class="main-description-recent">${noticia.resumo}</p>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="new-button" onclick='abrirDetalhes(${JSON.stringify(
+            noticia
+          )})'>Leia Mais</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  return card;
+}
+
+function abrirDetalhes(noticia) {
+  localStorage.setItem("noticiaSelecionada", JSON.stringify(noticia));
+  window.location.href = "../Details/index.html"; 
+}

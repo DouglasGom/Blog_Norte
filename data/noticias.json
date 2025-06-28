@@ -28,6 +28,7 @@
     "highlight": ["PASSAGENS E EXPERIÊNCIAS"],
     "foto": "https://uploads.diariodopara.com.br/2025/05/yIOhtWJ3-imagem_otimizada-2-2.webp"
   },
+
   {
     "card": "small",
     "secao": "destaque",
@@ -42,6 +43,7 @@
     "highlight": [""],
     "foto": "https://i0.wp.com/pontodepauta.com/wp-content/uploads/2021/01/mangueirao_belem.jpg?ssl=1"
   },
+
   {
     "card": "small",
     "secao": "destaque",
@@ -57,6 +59,7 @@
     "highlight": [""],
     "foto": "https://portalnorte.com.br/wp-content/uploads/2025/06/Capa-Manchete-9.png"
   },
+
   {
     "card": "small",
     "secao": "mais-vistos",
@@ -72,6 +75,7 @@
     "highlight": [""],
     "foto": "https://s2-g1.glbimg.com/bsihq1IVKoHAL22fod3qDb3Jjl8=/0x0:1000x665/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/k/Z/aYryi6RYy7SNBBHauMLQ/04-10-secretaria-de-sa-de-confirma-primeiro-caso-de-var-ola-dos-macacos.jpg"
   },
+
   {
     "card": "small",
     "secao": "mais-vistos",
@@ -91,15 +95,76 @@
   {
     "card": "small",
     "secao": "mais-vistos",
-    "categoria": "Esportes",
-    "data": "12 de Maio de 2025",
-    "titulo": "Remo anuncia a contrtação de novo atacante",
-    "resumo": "Na última terça-feira (27), o clube anunciou a contratação do atacante de 25 anos, Matheus Davó, que atuava no Mirassol, onde disputou 10 partidas, marcando um gol e uma assistência. O jogador, que já passou por times como Corinthians, Bahia e Cruzeiro deve chegar em Belém durante a semana para realizar exames médicos e assinar com o Remo até abril de 2026.",
+    "categoria": "Politica",
+    "data": "21 de Janeiro de 2025",
+    "titulo": "MEC investe mais de R$ 32 milhões no transporte escolar por barcos na Região Norte",
+    "resumo": "O Ministério da Educação anunciou um novo repasse de mais de R$ 32,5 milhões para fortalecer o transporte escolar por meio de embarcações nos estados da Região Norte.",
     "texto": [
-      "O atacante Matheus Davó está oficialmente em Belém. Novo reforço do Clube do Remo para a disputa da Série B do Campeonato Brasileiro, o jogador desembarcou na tarde desta quinta-feira (29) no Aeroporto Internacional de Belém, demonstrando entusiasmo com o desafio de recolocar o Leão Azul na elite do futebol nacional. O Remo adquiriu 60% dos direitos federativos do atleta em definitivo.",
-      "Aos 25 anos, Matheus Davó chega com experiência em clubes de peso no cenário nacional e também no futebol internacional. Natural de São Paulo (SP), o atacante tem passagens por Guarani, Corinthians, Bahia, Cruzeiro, América Mineiro e Mirassol, além de ter atuado no exterior por clubes como o Philadelphia Union (EUA) e o Pafos FC (Chipre). Ele passará por exames médicos antes de ser integrado ao elenco azulino."
+      "O Ministério da Educação anunciou um novo repasse de mais de R$ 32,5 milhões para fortalecer o transporte escolar por meio de embarcações nos estados da Região Norte. O valor, disponibilizado pelo Fundo Nacional de Desenvolvimento da Educação (FNDE), busca promover equidade no acesso às escolas públicas, atendendo alunos que dependem de transporte fluvial para chegar ao local de ensino.",
+      "De acordo com o ministro da Educação, Camilo Santana, o investimento é essencial para atender comunidades “de acesso mais difícil, com muitos rios”, onde o barco é o principal meio de locomoção.",
+      "__HIGHLIGHT__",
+      "Valores distribuídos para cada estado:\n\nPará: R$ 18,7 milhões\nAmazonas: R$ 9,3 milhões\nAcre: R$ 2,2 milhões\nAmapá: R$ 876 mil",
+      "A medida tem como objetivo garantir mais equidade, dessa forma, considerando as particularidades geográficas, garantir que o trajeto até a escola não seja um obstáculo ao aprendizado."
     ],
-    "highlight": ["PASSAGENS E EXPERIÊNCIAS"],
-    "foto": "https://uploads.diariodopara.com.br/2025/05/yIOhtWJ3-imagem_otimizada-2-2.webp"
+    "highlight": [
+      "Queremos garantir um transporte escolar de qualidade e seguro, especialmente para crianças e jovens da Região Norte, reforçou o ministro."
+    ],
+    "foto": "https://th.bing.com/th/id/R.ac85084508f41ea1e10530b2a8552d4a?rik=ojqzBMSSAgZhZA&riu=http%3a%2f%2f3.bp.blogspot.com%2f-IUV_4qN5ZdM%2fUXA9bAOFvZI%2fAAAAAAAAAlU%2fkHG7EBiU1iE%2fs1600%2ftransporte-escolar%2b-%2bLANCHA.jpg&ehk=Y%2fyf9MFf4%2fFrsfad6WBzgRQyifxBzCmJHvLMxvxdlQg%3d&risl=&pid=ImgRaw&r=0"
+  },
+
+  {
+    "card": "small",
+    "secao": "mais-vistos",
+    "categoria": "Politica",
+    "data": "15 de Maio de 2025",
+    "titulo": " Reunião entre países da BRICS debatem propostas sustentáveis e economia verde.",
+    "resumo": "Durante o encontro, foram discutidos temas como energia limpa, combustíveis sustentáveis, acordos de céu aberto, conectividade e aviação sustentável.",
+    "texto": [
+      "Segundo a Assessoria Especial de Comunicação Social do Ministério de Portos e Aeroportos, a 3ª Reunião do Grupo de Trabalho (GT) de Infraestrutura do BRICS acontecida em maio de 2025, reuniu representantes do Brasil além das delegações da África do Sul, China, Emirados Árabes Unidos, Etiópia, Índia, Indonésia e Rússia. O foco era debater soluções para transportes sustentáveis, mobilidade urbana, transição energética e desenvolvimento econômico e social, buscando construir uma infraestrutura mais resiliente frente às mudanças climáticas e eventos extremos.",
+      "Durante o encontro, foram discutidos temas como energia limpa, combustíveis sustentáveis, acordos de céu aberto, conectividade e aviação sustentável. Os países contribuíram ao compartilhar experiências e projetos já implementados.",
+      "O secretário-executivo adjunto do Ministério de Portos e Aeroportos, Fábio Lavor, destacou o papel do Brasil na sustentabilidade dos transportes. Ele citou projetos como a descarbonização dos portos e do transporte marítimo, além do uso de combustíveis sustentáveis na aviação.",
+      "Além disso, Lavor mencionou os impactos das mudanças climáticas no país, como as enchentes no Rio Grande do Sul e a estiagem na região Norte, demonstrando, assim, que protocolos de resposta rápida a desastres são cruciais para a segurança no país.",
+      "Por fim, foi contemplada a ampliação da conectividade entre os países do BRICS, especialmente por meio de novas rotas aéreas, para fortalecer o comércio, turismo, intercâmbio educacional e cultural."
+    ],
+    "highlight": [""],
+    "foto": "https://cdn.sputniknews.cn/img/07e8/0a/11/1062099836_113:0:802:517_1920x0_80_0_0_5aff743f5939a70570e41a18616cde6a.jpg"
+  },
+
+  {
+    "card": "small",
+    "secao": "mais-vistos",
+    "categoria": "Cultura",
+    "data": "15 de Junho de 2025",
+    "titulo": "Você conhece quais são os estilos de música mais famosos do Norte do Brasil?",
+    "resumo": "Confira um pouco da história e das características de alguns dos estilos.",
+    "texto": [
+      "__HIGHLIGHT__",
+      "O carimbó é um gênero musical do estado do Pará, ele tem origem indígena, no entanto, recebeu forte influência africana, e essa junção tornou o ritmo agitado e alegre. O nome é herdado do povo Tupinambá, onde CURI significa pau oco e M’BÓ significa furado, ou seja, pau que propaga o som, indicando o tambor usado no ritmo. Por fim,o carimbó influenciou gêneros como a lambada e o zouk.",
+      "__HIGHLIGHT__",
+      "A dança começa quando um homem convida uma mulher, batendo palmas, e então os dançarinos formam uma roda, com as saias as mulheres fazem movimentos circulares e seus parceiros devem desviar, se for acertado sai da roda.",
+      "__HIGHLIGHT__",
+      "Mestres Verequete: Borboletas da Asa Amarela, Sereia do mar e Areia Areia Arê lê.\n Cupijó: Menina Chorona, Mingau de Açai e Mambo Do Martelo.\n Pinduca : Sem você nada é bonito, Garota do Tacacá e Sinhá Pureza.",
+      "Para mulheres, as roupas são compostas por saias rodadas estampadas, blusa de cambraia branca e acessórios como colares coloridos e flores no cabelo. Já para os homens, calça curta de pescador e camisa estampada.",
+
+
+       "__HIGHLIGHT__",
+      "A Marujada é uma manifestação cultural tradicional de Bragança, estado do Pará, ela teve origem em 1798, quando os escravizados conseguiram permissão para organizar a Irmandade de São Benedito, realizando a primeira festa para homenagear o santo. As apresentações tipicamente realizadas no natal, no dia de São Benedito e 1º de janeiro. ",
+      "__HIGHLIGHT__",
+      "Durante o evento, marujos e marujas, por isso marujada, percorrem as ruas imitando o balanço de um barco. As mulheres conduzem a dança, enquanto os homens por sua vez tocam instrumentos como violas, violinos, tambores e cavaquinhos. A dança possui diversos ritmos e coreografias, como Contra Dança, Retumbão, Mazurca, Valsa, Xote Bragantino, Chorado e Roda."
+    ],
+    "highlight": ["Carimbó \n Sua origem:", "Detalhes sobre a dança:", "Artistas famosos e algumas de suas obras:", "Figurino:", "Marujada \nSobre a origem:", "Dança e música:"],
+    "foto": "https://escolaeducacao.com.br/wp-content/uploads/2019/09/carimb%C3%B3.jpg"
+  },
+
+  {
+    "card": "small",
+    "secao": "mais-vistos",
+    "categoria": "Variedades",
+    "data": "20 de Junho de 2025",
+    "titulo": "Tirinha: Amazônia",
+    "resumo": "Curiosidade sobre a maior floresta tropical do mundo.",
+    "texto": [],
+    "highlight": [""],
+    "foto": "../../assets/cover2.jpg"
   }
 ]
